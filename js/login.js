@@ -1,15 +1,17 @@
-// login.js
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('btn-submit').addEventListener('click', function() {
-        console.log('submit button clicked');
-        // Get the email address and password
-        const emailField = document.getElementById('user-email');
-        const passwordField = document.getElementById('user-password');
+//step 1 add click ecent handler with the submit button
+document.getElementById('btn-submit').addEventListener('click' , function(){
+    // step 2 get the email adress inside the email
+    // always remember to us e.value to get text from an input field 
+    const emailField = document.getElementById('user-email');
 
-        const email = emailField.value;
-        const password = passwordField.value;
+    const email = emailField.value;
+    //step- 3 get password 
+    // set id on the html element 
+    // get the element
+    // get the value from the element
 
-        console.log("Email:", email);
-        console.log("Password:", password);
-    });
-});
+    const passwordField = document.getElementById('user-password');
+    const password = passwordField.value;
+
+    console.log(email,password)
+})
